@@ -1,0 +1,19 @@
+// colors
+
+$primary-color: hsl(25, 97%, 53%);
+$heading-color: hsl(0, 0%, 100%);
+$text-color: hsl(217, 12%, 80%);
+$gradient: radial-gradient(rgb(35, 42, 52), rgb(24, 30, 39));
+$btn-color: rgb(38, 46, 56);
+$main-bg: hsl(216, 12%, 8%);
+
+$main-font: "Overpass", sans-serif;
+
+// mixin
+
+@mixin flex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

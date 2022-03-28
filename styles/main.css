@@ -1,0 +1,182 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: #121417;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  color: white;
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: #c6cbd2;
+  font-weight: 200;
+}
+
+.message__rating {
+  color: #fb7413;
+}
+
+input,
+button {
+  font-size: 1.4rem;
+}
+
+.card {
+  min-height: 360px;
+  max-height: 416px;
+  width: clamp(327px, 85%, 412px);
+  margin: auto;
+  background: radial-gradient(#232a34, #181e27);
+  border-radius: 15px;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 2rem;
+  overflow-x: hidden;
+}
+.card__icon-container {
+  height: 40px;
+  width: 40px;
+  background-color: #262e38;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__icon-container img {
+  aspect-ratio: 1/1;
+}
+.card__text {
+  line-height: 1.5;
+}
+.card__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 3rem;
+  width: 100%;
+}
+.card__rating-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.card__rating {
+  height: 42px;
+  width: 42px;
+  border: none;
+  border-radius: 50%;
+  color: #c6cbd2;
+  background-color: #262e38;
+}
+.card__rating:hover {
+  background-color: #c6cbd2;
+  transition: background-color 0.5s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+.card__rating:focus {
+  background-color: #fb7413;
+  transition: background-color 0.5s ease-in-out;
+  color: white;
+}
+.card__btn {
+  width: 100%;
+  padding-block: 1rem;
+  border: none;
+  border-radius: 23px;
+  letter-spacing: 1.5px;
+  color: white;
+  background-color: #fb7413;
+  cursor: pointer;
+}
+.card__btn:hover {
+  background-color: white;
+  transition: background-color 0.5s ease-in-out;
+  color: #fb7413;
+}
+
+.message {
+  min-height: 360px;
+  max-height: 416px;
+  width: clamp(327px, 85%, 412px);
+  margin: auto;
+  background: radial-gradient(#232a34, #181e27);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+.message__rating {
+  background: #323a48;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+}
+.message__text {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.d-none {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,79 @@
+@use "./variables" as *;
+
+.card {
+  min-height: 360px;
+  max-height: 416px;
+  width: clamp(327px, 85%, 412px);
+  margin: auto;
+  background: $gradient;
+  border-radius: 15px;
+  padding: 3rem 3rem;
+  @include flex(column, center, flex-start);
+  row-gap: 2rem;
+  overflow-x: hidden;
+
+  &__icon-container {
+    height: 40px;
+    width: 40px;
+    background-color: $btn-color;
+    border-radius: 50%;
+    @include flex(column, center, center);
+
+    img {
+      aspect-ratio: 1/1;
+    }
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+
+  &__form {
+    @include flex(column, space-around, center);
+    row-gap: 3rem;
+    width: 100%;
+  }
+
+  &__rating-container {
+    @include flex(row, space-around, center);
+    width: 100%;
+  }
+
+  &__rating {
+    height: 42px;
+    width: 42px;
+    border: none;
+    border-radius: 50%;
+    color: $text-color;
+    background-color: $btn-color;
+
+    &:hover {
+      background-color: $text-color;
+      transition: background-color 0.5s ease-in-out;
+      color: white;
+      cursor: pointer;
+    }
+    &:focus {
+      background-color: $primary-color;
+      transition: background-color 0.5s ease-in-out;
+      color: white;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding-block: 1rem;
+    border: none;
+    border-radius: 23px;
+    letter-spacing: 1.5px;
+    color: white;
+    background-color: $primary-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      transition: background-color 0.5s ease-in-out;
+      color: $primary-color;
+    }
+  }
+}

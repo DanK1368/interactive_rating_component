@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+.message {
+  min-height: 360px;
+  max-height: 416px;
+  width: clamp(327px, 85%, 412px);
+  margin: auto;
+  background: $gradient;
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  @include flex(column, center, center);
+  row-gap: 2rem;
+
+  &__rating {
+    background: hsl(218, 18%, 24%);
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+.d-none {
+  display: none;
+}

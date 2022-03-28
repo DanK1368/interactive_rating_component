@@ -1,0 +1,34 @@
+@use "./variables" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $main-font;
+  background-color: $main-bg;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  color: $heading-color;
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: $text-color;
+  font-weight: 200;
+}
+
+.message__rating {
+  color: $primary-color;
+}
+
+input,
+button {
+  font-size: 1.4rem;
+}
